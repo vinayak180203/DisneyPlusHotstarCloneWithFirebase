@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
 import styled from 'styled-components'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function ImgSlider() {
+
     let settings = {
         dots: true,
         infinite: true,
@@ -16,12 +17,12 @@ function ImgSlider() {
 
     return (
         <Carousel {...settings}>
-            <Wrap>
-                <img src='/images/slider-badging.jpg' alt="" />
-            </Wrap>
-            <Wrap>
-                <img src='/images/slider-badag.jpg' alt="" />
-            </Wrap>
+                <Wrap>
+                    <img src="/images/slider-badag.jpg" alt=""/>
+                </Wrap>
+                <Wrap>
+                    <img src="/images/slider-badging.jpg" alt=""/>
+                </Wrap>
         </Carousel>
     )
 }
